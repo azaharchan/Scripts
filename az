@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Directory path to check and create
+azahar="/root/azahar"
+read azahar
+# Check if the directory exists
+if [ -d "$azahar" ]; then
+  echo "Directory '$azahar' already exists."
+else
+  # Create the directory
+  mkdir -p "$azahar"
+
+  # Check if the directory creation was successful
+  if [ $? -eq 0 ]; then
+    echo "Directory '$azahar' created successfully."
+  else
+    echo "Failed to create directory '$azahar'."
+  fi
+fi
+

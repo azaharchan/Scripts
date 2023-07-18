@@ -1,0 +1,15 @@
+#!/bin/bash
+# sume
+pwd
+
+read x
+read y
+z=$((x+y))
+a=$((x-y))
+c=$((x*y))
+d=$((x%y))
+echo $a
+echo $c
+echo $d
+echo $z
+

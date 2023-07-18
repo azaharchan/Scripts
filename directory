@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Source directory to be backed up
+source_dir="/root/pavan"
+
+# Backup directory where the backup will be stored
+backup_dir="/root"
+
+# Create a timestamp for the backup file name
+timestamp=$(date +%2023%07%17%H08%27%25)
+
+# Create the backup file name
+backup_file="${chan}/backup_${timestamp}.tar.gz"
+
+# Create the backup using tar
+tar -zcvf chan.tar.gz /root
+
+# Check if the backup was successful
+if [ $? -eq 0 ]; then
+  echo "Backup created successfully: $chan"
+else
+  echo "Backup failed!"
+fi
+

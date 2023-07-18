@@ -1,0 +1,24 @@
+#!/bin/bash 
+# demo of the case statement 
+ 
+clear 
+ 
+echo "MAIN MENU" 
+echo "=========" 
+echo "1) fruits" 
+echo "2) fast food" 
+echo "3) rice" 
+echo "" 
+echo "Enter Choice: " 
+read MENUCHOICE 
+ 
+case $MENUCHOICE in 
+  1) 
+    echo "Congratulations for Choosing the First Option";; 
+  2) 
+    echo "Choice 2 Chosen";; 
+  3)  
+    echo "Last Choice Made";; 
+  *) 
+    echo "You chose unwisely";; 
+esac 
